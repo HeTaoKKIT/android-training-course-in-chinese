@@ -16,19 +16,19 @@ Layouts是ViewGroup的子类，接下来的练习将使用[LinearLayout](http://
 **Figure 1.** 关于viewgroup对象如何组织布局分支和包含其他view对象。
 
 
-> 可选的布局文件：在XML中定义界面布局而不是在运行时去动态生成布局是有多个原因的，其中最重要的一点是这样可以使得你为不同大小的屏幕创建不同的布局文件。例如，你可以创建创建2个版本的布局文件，告诉系统在小的屏幕上使用其中一个布局文件，在大的屏幕上使用另外一个布局文件。更多信息，请参考[兼容不同的设备](../supporting-devices/index.html)
+> 可选的布局文件：在XML中定义界面布局而不是在运行时去动态生成布局是有多个原因的，其中最重要的一点是这样可以使得你为不同大小的屏幕创建不同的布局文件。例如，你可以创建2个版本的布局文件，告诉系统在小的屏幕上使用其中一个布局文件，在大的屏幕上使用另外一个布局文件。更多信息，请参考[兼容不同的设备](../supporting-devices/index.html)
 
 ## 创建一个LinearLayout
 
 1 在Android Studio中，从res/layout目录打开activity_my.xml文件。上一节创建新项目时生成的BlankActivity，包含一个activity_my.xml文件，该文件根元素是一个包含TextView的RelativeLayout。
 
-2 在**Preview**面板点击![image](as-hide-side.png)关闭右侧Preview面板，在Android Studio中，当打开布局文件的时，可以看到一个Preview面板，点击这个面板中的标签，可利用WYSIWYG（所见即所得）工具在Design面板看到对应的图形化效果，但在本节直接操作XML文件即可。
+2 在**Preview**面板点击![image](as-hide-side.png)关闭右侧Preview面板，在Android Studio中，当打开布局文件时，可以看到一个Preview面板，点击这个面板中的标签，可利用WYSIWYG（所见即所得）工具在Design面板看到对应的图形化效果，但在本节直接操作XML文件即可。
 
 3 删除 TextView 标签.
 
 4 把 RelativeLayout 标签改为 LinearLayout.
 
-5 为<LinearLayout>添加 android:orientation 属性并设置值为 "horizontal".
+5 为< LinearLayout >添加 android:orientation 属性并设置值为 "horizontal".
 
 6 去掉android:padding 属性和tools:context 属性.
 
@@ -58,7 +58,7 @@ res/layout/activity_my.xml
 
 与其它View一样，我们需要设置XML里的某些属性来指定EditText的属性值，以下是应该在线性布局里指定的一些属性元素：
 
-1 在activity\_my.xml文件的 <LinearLayout\> 标签内定义一个 <EditText\> 标签，并设置id属性为@+id/edit_message.
+1 在activity\_my.xml文件的 < LinearLayout > 标签内定义一个 < EditText > 标签，并设置id属性为@+id/edit_message.
 
 2 设置layout_width和layout_height属性为 wrap_content.
 
@@ -131,7 +131,7 @@ res/layout/activity_my.xml
 
 1 在 Android Studio里, 编辑 res/layout下的 activity_my.xml 文件.
 
-2 在LinearLayout 内部, 在<EditText\>标签之后定义一个<Button\>标签.
+2 在LinearLayout 内部, 在< EditText >标签之后定义一个< Button >标签.
 
 3 设置Button的width 和 height 属性值为 "wrap_content" 以便让Button大小能完整显示其上的文本.
 
